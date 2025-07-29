@@ -1,0 +1,116 @@
+mysql> create database webgui;
+Query OK, 1 row affected (0.28 sec)
+
+mysql> use webgui;
+Database changed
+mysql> CREATE TABLE registration(
+    -> id INT AUTO_INCREMENT PRIMARY KEY,
+    -> name VARCHAR(100) NOT NULL,
+    -> course VARCHAR(100) NOT NULL,
+    -> fee DECIMAL(10, 2) NOT NULL);
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> desc registration;
++--------+---------------+------+-----+---------+----------------+
+| Field  | Type          | Null | Key | Default | Extra          |
++--------+---------------+------+-----+---------+----------------+
+| id     | int           | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(100)  | NO   |     | NULL    |                |
+| course | varchar(100)  | NO   |     | NULL    |                |
+| fee    | decimal(10,2) | NO   |     | NULL    |                |
++--------+---------------+------+-----+---------+----------------+
+4 rows in set (0.07 sec)
+
+mysql> DROP TABLE registration;
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> show tables;
+Empty set (0.01 sec)
+
+mysql> show tables;
++------------------+
+| Tables_in_webgui |
++------------------+
+| employees        |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> desc employees;
++--------+--------------+------+-----+---------+----------------+
+| Field  | Type         | Null | Key | Default | Extra          |
++--------+--------------+------+-----+---------+----------------+
+| id     | int          | NO   | PRI | NULL    | auto_increment |
+| emp_id | varchar(20)  | YES  |     | NULL    |                |
+| name   | varchar(100) | YES  |     | NULL    |                |
+| mobile | varchar(15)  | YES  |     | NULL    |                |
+| salary | float        | YES  |     | NULL    |                |
++--------+--------------+------+-----+---------+----------------+
+5 rows in set (0.01 sec)
+
+mysql> select * from employees;
++----+--------+------+------------+--------+
+| id | emp_id | name | mobile     | salary |
++----+--------+------+------------+--------+
+|  1 | 10     | Ron  | 7005511358 |  80000 |
++----+--------+------+------------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from employees;
+Empty set (0.00 sec)
+
+mysql> select * from employees;
++----+--------+------------+------------+--------+
+| id | emp_id | name       | mobile     | salary |
++----+--------+------------+------------+--------+
+|  4 | 14     | Ronita Das | 7005511358 | 100000 |
++----+--------+------------+------------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from employees;
++----+--------+------------+------------+--------+
+| id | emp_id | name       | mobile     | salary |
++----+--------+------------+------------+--------+
+|  4 | 14     | Ronita Das | 7005511358 | 100000 |
++----+--------+------------+------------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from employees;
++----+--------+--------------------+------------+--------+
+| id | emp_id | name               | mobile     | salary |
++----+--------+--------------------+------------+--------+
+|  4 | 14     | Ronita Das         | 7005511358 | 100000 |
+|  5 | 05     | Prashanta Saha Roy | 9485075710 | 100000 |
++----+--------+--------------------+------------+--------+
+2 rows in set (0.00 sec)
+
+mysql> select * from employees;
++----+--------+--------------------+------------+--------+
+| id | emp_id | name               | mobile     | salary |
++----+--------+--------------------+------------+--------+
+|  4 | 14     | Ronita Das         | 7005511358 | 100000 |
+|  5 | 06     | Prashanta Saha Roy | 9485075710 | 100000 |
++----+--------+--------------------+------------+--------+
+2 rows in set (0.00 sec)
+
+mysql> select * from employees;
++----+--------+--------------------+------------+--------+
+| id | emp_id | name               | mobile     | salary |
++----+--------+--------------------+------------+--------+
+|  4 | 14     | Ronita Das         | 7005511358 | 100000 |
+|  5 | 05     | Prashanta Saha Roy | 9485075710 | 100000 |
+|  6 | 11     | Jerry              | 9436123456 |  30000 |
+|  8 | 09     | Bhumika            | 9436123456 |  50000 |
++----+--------+--------------------+------------+--------+
+4 rows in set (0.01 sec)
+
+mysql> select * from employees;
++----+--------+--------------------+------------+--------+
+| id | emp_id | name               | mobile     | salary |
++----+--------+--------------------+------------+--------+
+|  4 | 14     | Ronita Das         | 7005511358 | 100000 |
+|  5 | 05     | Prashanta Saha Roy | 9485075710 | 100000 |
+|  6 | 11     | Jerry              | 9436123456 |  30000 |
++----+--------+--------------------+------------+--------+
+3 rows in set (0.00 sec)
+
+mysql>
