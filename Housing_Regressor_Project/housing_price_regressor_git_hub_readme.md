@@ -84,19 +84,19 @@ The web app allows users to:
 
 ### 1️⃣ Clone the Repository
 
-```bash
+```
 https://github.com/ronitadas05/6months-AI-roadmap_2025/tree/main/Housing_Regressor_Project
 ```
 
 ### 2️⃣ Install Dependencies
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
 ### 3️⃣ Run the Application
 
-```bash
+```
 python app.py
 ```
 
